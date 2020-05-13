@@ -7,7 +7,8 @@ BLOOP_VERSION=$3
 rm -rf bin
 mkdir bin
 ./link-fastpass.sh $METALS_VERSION
-curl -Lo bin/bloop https://github.com/scalacenter/bloop/releases/download/v$BLOOP_VERSION/bloop-x86_64-apple-darwin
+./link-bloop.sh $BLOOP_VERSION
+# curl -Lo bin/bloop https://github.com/scalacenter/bloop/releases/download/v$BLOOP_VERSION/bloop-x86_64-apple-darwin
 TAR=fastpass.tar.gz
 file bin/fastpass
 file bin/bloop
