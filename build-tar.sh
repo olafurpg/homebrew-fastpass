@@ -5,6 +5,7 @@ TAG="v$1"
 FASTPASS_VERSION=$2
 BLOOP_VERSION=$3
 rm -rf bin
+rm -f fastpass.tar.gz
 mkdir bin
 curl -Lo bin/fastpass https://github.com/scalameta/fastpass/releases/download/v$FASTPASS_VERSION/fastpass-x86_64-apple-darwin
 curl -Lo bin/bloop https://github.com/scalacenter/bloop/releases/download/v$BLOOP_VERSION/bloop-x86_64-apple-darwin
